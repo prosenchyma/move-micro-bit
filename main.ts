@@ -2,7 +2,6 @@ input.onButtonPressed(Button.A, function on_button_pressed_a() {
     let randomnumber: number;
     let forwardcounter = 0
     while (forwardcounter < 5) {
-        basic.pause(500)
         randomnumber = randint(1, 2)
         if (randomnumber == 1) {
             forwardcounter += 1
@@ -15,5 +14,6 @@ input.onButtonPressed(Button.A, function on_button_pressed_a() {
             serial.writeLine("backward")
         }
         
+        basic.pause(500)
     }
 })
